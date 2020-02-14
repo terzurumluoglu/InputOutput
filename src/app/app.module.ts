@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { ToastComponent } from './components/home/toast/toast.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,
