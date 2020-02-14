@@ -24,7 +24,7 @@ export class ProductComponent implements OnInit {
     this.products = this.pList.getAllProducts();
   }
 
-  outUpdateData(event: Product) {
+  outputDataData(event: Product) {
     let i: number = this.products.indexOf(event);
   }
 
