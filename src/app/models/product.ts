@@ -31,8 +31,8 @@ export class ProductsList {
         return this._products.find(p => p.id == id);
     }
     constructor() {
-        for (let i = 1; i <= 10; i++) {
-            let price: number = 994.5 + i*10;
+        for (let i = 1; i <= 5; i++) {
+            let price: number = 40 + i*10;
             let name: string = 'Product ' + i.toString();
             let description: string = name + ' : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim dolor, maximus vitae elit non, hendrerit egestas ligula. Aenean vulputate ligula diam, sed scelerisque est porttitor non.';
             let image: string = 'https://i.picsum.photos/id/' + (i - 1).toString() + '/300/200.jpg';
