@@ -1,6 +1,6 @@
 <ul class="list-group fix-alert">
     <li class="list-group-item list-group-item-danger" *ngIf="datas?.length != 0">
-        Recent Activities - Total : {{getTotoalPrice(datas)}} (x{{datas.length}})
+        Recent Activities - Total : {{getTotoalPrice()}} (x{{datas.length}})
     </li>
     <li class="list-group-item list-group-item-info" *ngFor="let data of datas">    
         {{data?.name}} 's added to cart!
