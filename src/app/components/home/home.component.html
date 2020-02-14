@@ -1,1 +1,22 @@
-<p>home works!</p>
+<main role="main" class="container">
+    <div class="my-3 p-3 bg-white rounded">
+        <h6 class="border-bottom border-gray pb-2 mb-0" style="text-align: right;height: 30px;">
+            <div *ngIf="cart.length != 0">
+                <span style="float: right;">
+                    <b>{{userName}}' s</b> Shopping Cart <span
+                        class="badge badge-info">{{cart.length}}
+                    </span>
+                </span>
+            </div>
+            <div *ngIf="cart.length == 0">
+
+                <span style="float: left;">
+                        <b>{{userName}}</b>
+                </span>
+                Your cart is empty
+            </div>
+            <!-- <i class="fa fa-shopping-cart"></i> -->
+        </h6>
+        <router-outlet></router-outlet>
+    </div>
+</main>
