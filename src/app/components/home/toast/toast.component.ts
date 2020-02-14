@@ -9,7 +9,7 @@ import { CartService } from 'src/app/services/cart/cart.service';
 })
 export class ToastComponent implements OnInit,DoCheck {
   @Input() data: Product;
-  @Output() outputData = new EventEmitter();
+  @Output() outputDataChange = new EventEmitter();
   cart : Product[];
   datas : Product[] = [];
   flag :boolean = true;
@@ -28,7 +28,7 @@ export class ToastComponent implements OnInit,DoCheck {
     this.cart.splice(index,1);
     this._cart.setCart(this.cart);
     this.data = null;
-    this.outputData.emit(p);
+    this.outputDataChange.emit(p);
   }
 
   getTotoalPrice(){
