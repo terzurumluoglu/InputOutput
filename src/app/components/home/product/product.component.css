@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(to right, #c04848, #480048);
+    min-height: 100vh
+}
+a{
+    color: #fff !important;
+}
+.text-gray {
+    color: #aaa
+}
+
+img {
+    height: 170px;
+    width: 140px
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 1rem !important;
+}
+.pt-5, .py-5 {
+    padding-top: 1rem !important;
+}
